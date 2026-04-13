@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GAJRA Earth Space AI Summit</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #ffffff;
+  --text: #111;
+  --accent: #6c63ff;
+  --card: #f4f4f4;
+}
+
+[data-theme="dark"] {
+  --bg: #0d0d0d;
+  --text: #f5f5f5;
+  --accent: #8a7cff;
+  --card: #1a1a1a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s;
+}
+
+header {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+button {
+  background: var(--accent);
+  border: none;
+  padding: 0.6rem 1rem;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: auto;
+  opacity: 0.7;
+}
+
+.section {
+  padding: 4rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--card);
+  padding: 1.5rem;
+  border-radius: 16px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.footer {
+  text-align: center;
+  padding: 3rem 1rem;
+  opacity: 0.6;
+}
+
+@media(max-width:600px){
+  header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">🌍 GAJRA Earth</div>
+  <button onclick="toggleTheme()">Toggle Theme</button>
+</header>
+
+<section class="hero">
+  <h1>Earth • Space • AI Summit</h1>
+  <p>
+    A global convergence of pioneers building a future of joyful responsible abundance.  
+    Join 10,000 leaders in Brisbane shaping the next planetary operating system.
+  </p>
+  <br>
+  <button>Apply to Attend</button>
+</section>
+
+<section class="section">
+  <h2>🌐 The Vision</h2>
+  <p>
+    Reimagining global governance, accelerating regenerative economies, and unlocking peaceful space exploration through AI and collective intelligence.
+  </p>
+</section>
+
+<section class="section">
+  <h2>🚀 Key Pillars</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>AI & Intelligence</h3>
+      <p>Frontier models, Aura of Intelligence, and planetary-scale decision systems.</p>
+    </div>
+    <div class="card">
+      <h3>Space Cooperation</h3>
+      <p>A peaceful space treaty and collaborative exploration framework.</p>
+    </div>
+    <div class="card">
+      <h3>Regenerative Economy</h3>
+      <p>A new Bretton Woods for sustainability and abundance.</p>
+    </div>
+    <div class="card">
+      <h3>Global Governance</h3>
+      <p>Gamified democracy and decentralized coordination systems.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>👥 Who Attends</h2>
+  <div class="grid">
+    <div class="card">AI Researchers</div>
+    <div class="card">Space Agencies</div>
+    <div class="card">Government Leaders</div>
+    <div class="card">Founders & Builders</div>
+    <div class="card">Investors</div>
+    <div class="card">Artists & Creators</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>📍 Brisbane 2026</h2>
+  <p>
+    Hosted in one of the world’s fastest-growing global cities — the gateway to a new era of planetary collaboration.
+  </p>
+</section>
+
+<section class="section" style="text-align:center;">
+  <h2>✨ Join the Vanguard</h2>
+  <p>Be part of the 10,000 shaping humanity’s next chapter.</p>
+  <br>
+  <button>Apply Now</button>
+</section>
+
+<div class="footer">
+  <p>© 2026 GAJRA Earth • Joyful Responsible Abundance</p>
+</div>
+
+<script>
+function toggleTheme() {
+  const current = document.body.getAttribute("data-theme");
+  document.body.setAttribute(
+    "data-theme",
+    current === "dark" ? "light" : "dark"
+  );
+}
+</script>
+
+</body>
+</html>
