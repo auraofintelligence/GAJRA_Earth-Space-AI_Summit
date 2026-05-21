@@ -1,200 +1,147 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!doctype html>
+<html lang="en-AU">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GAJRA Earth Space AI Summit</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-
-<style>
-:root {
-  --bg: #ffffff;
-  --text: #111;
-  --accent: #6c63ff;
-  --card: #f4f4f4;
-}
-
-[data-theme="dark"] {
-  --bg: #0d0d0d;
-  --text: #f5f5f5;
-  --accent: #8a7cff;
-  --card: #1a1a1a;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Inter', sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  transition: 0.3s;
-}
-
-header {
-  padding: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-weight: 800;
-  font-size: 1.3rem;
-}
-
-button {
-  background: var(--accent);
-  border: none;
-  padding: 0.6rem 1rem;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.hero {
-  text-align: center;
-  padding: 6rem 2rem;
-}
-
-.hero h1 {
-  font-size: clamp(2rem, 5vw, 4rem);
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  max-width: 600px;
-  margin: auto;
-  opacity: 0.7;
-}
-
-.section {
-  padding: 4rem 2rem;
-  max-width: 1100px;
-  margin: auto;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-}
-
-.card {
-  background: var(--card);
-  padding: 1.5rem;
-  border-radius: 16px;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.footer {
-  text-align: center;
-  padding: 3rem 1rem;
-  opacity: 0.6;
-}
-
-@media(max-width:600px){
-  header {
-    flex-direction: column;
-    gap: 1rem;
-  }
-}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An early support-seeking doorway for a proposed Brisbane summit connecting peaceful space, civic AI, care, community resilience, Strange but True and P4A.">
+  <meta name="theme-color" content="#071426">
+  <title>Brisbane Peaceful Space & Civic AI Summit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Nunito+Sans:wght@800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Summit home">
+      <span class="brand-mark">B</span>
+      <span class="brand-text"><strong>Brisbane Summit</strong><span>peaceful space + civic AI</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="vision.html">Vision</a>
+      <a href="themes.html">Themes</a>
+      <a href="program.html">Program</a>
+      <a href="celestial.html">Celestial</a>
+      <a href="support.html">Support</a>
+      <a href="related.html">Related</a>
+    </nav>
+  </header>
 
-<header>
-  <div class="logo">🌍 GAJRA Earth</div>
-  <button onclick="toggleTheme()">Toggle Theme</button>
-</header>
+  <main id="main">
+    <section class="hero hero-home" id="top">
+      <div class="hero-image"><img src="assets/brisbane-civic-space-hero.webp" alt="Brisbane river gathering with a night sky and peaceful orbital commons motif"></div>
+      <div class="hero-content">
+        <p class="status-note">Early support invitation, not an announced event</p>
+        <h1>Brisbane Peaceful Space & Civic AI Summit</h1>
+        <p class="hero-copy">A proposed Brisbane gathering for people who want care, civic technology, local resilience and peaceful space cooperation to meet in the same room early enough to matter.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="support.html">Signal support</a>
+          <a class="button button-secondary" href="vision.html">Read the invitation</a>
+        </div>
+      </div>
+    </section>
 
-<section class="hero">
-  <h1>Earth • Space • AI Summit</h1>
-  <p>
-    A global convergence of pioneers building a future of joyful responsible abundance.  
-    Join 10,000 leaders in Brisbane shaping the next planetary operating system.
-  </p>
-  <br>
-  <button>Apply to Attend</button>
-</section>
+    <section class="section intro-band" aria-labelledby="why-title">
+      <div class="intro-layout">
+        <figure class="visual-panel intro-visual">
+          <img loading="lazy" decoding="async" src="assets/support-field-brisbane.webp" alt="A diverse Brisbane civic planning group gathered around a table with city, river and peaceful space motifs">
+          <figcaption>Early support is a living field: introductions, review, hosting, trust and practical backing before public scale.</figcaption>
+        </figure>
+        <div class="intro-copy">
+          <p class="eyebrow">Why this page exists</p>
+          <h2 id="why-title">Build the support field before the conference.</h2>
+          <p>This site is the first public support layer: a calm way to show the idea, invite useful allies, and separate genuine civic preparation from hype. It keeps the summit as a working proposal until partners, venue logic, cultural protocol and practical backing are ready.</p>
+          <p>The seed docs give the site a real spine: C-Hours and the mobilisation of care, Minjerribah sand-to-stars thinking, P4A civic architecture, peaceful space cooperation, eclipse readiness and public-safe source trails.</p>
+          <div class="support-signals" aria-label="Early support signals">
+            <span>Venue logic</span>
+            <span>Research review</span>
+            <span>Community hosts</span>
+            <span>Civic tech</span>
+            <span>Story support</span>
+          </div>
+          <a class="button button-primary" href="support.html">Signal useful support</a>
+        </div>
+      </div>
+    </section>
 
-<section class="section">
-  <h2>🌐 The Vision</h2>
-  <p>
-    Reimagining global governance, accelerating regenerative economies, and unlocking peaceful space exploration through AI and collective intelligence.
-  </p>
-</section>
+    <section class="section" aria-labelledby="doorways-title">
+      <div class="section-heading">
+        <p class="eyebrow">Doorways</p>
+        <h2 id="doorways-title">A multi-page support pathway.</h2>
+      </div>
+      <div class="door-grid">
+        <a class="door-card" href="vision.html">
+          <span>01</span>
+          <h3>Vision</h3>
+          <p>Ground the sand-to-stars story, C-Hours and the Peaceful Space Gambit without pretending the summit is already locked in.</p>
+        </a>
+        <a class="door-card" href="themes.html">
+          <span>02</span>
+          <h3>Themes</h3>
+          <p>Care economy, Sovereignty Stack, AUKUS Space Gambit, ISS preservation, Web3 Sensorium, eclipse readiness and public trust.</p>
+        </a>
+        <a class="door-card" href="program.html">
+          <span>03</span>
+          <h3>Program Shape</h3>
+          <p>Yarning-circle rooms, evidence studios and support commitments, framed as invitations rather than promises.</p>
+        </a>
+        <a class="door-card" href="celestial.html">
+          <span>04</span>
+          <h3>Celestial</h3>
+          <p>The next Australian eclipse markers and the choice between awe, fear and readiness.</p>
+        </a>
+        <a class="door-card" href="support.html">
+          <span>05</span>
+          <h3>Support</h3>
+          <p>A practical form that creates a Markdown support note for partners, organisers and agent teams.</p>
+        </a>
+        <a class="door-card" href="related.html">
+          <span>06</span>
+          <h3>Related Work</h3>
+          <p>Visible links to Strange but True, P4A and the public-safe project boundary.</p>
+        </a>
+      </div>
+    </section>
 
-<section class="section">
-  <h2>🚀 Key Pillars</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>AI & Intelligence</h3>
-      <p>Frontier models, Aura of Intelligence, and planetary-scale decision systems.</p>
-    </div>
-    <div class="card">
-      <h3>Space Cooperation</h3>
-      <p>A peaceful space treaty and collaborative exploration framework.</p>
-    </div>
-    <div class="card">
-      <h3>Regenerative Economy</h3>
-      <p>A new Bretton Woods for sustainability and abundance.</p>
-    </div>
-    <div class="card">
-      <h3>Global Governance</h3>
-      <p>Gamified democracy and decentralized coordination systems.</p>
-    </div>
-  </div>
-</section>
+    <section class="section feature-strip" aria-labelledby="leverage-title">
+      <div>
+        <p class="eyebrow">Early leverage</p>
+        <h2 id="leverage-title">Attraction before announcement.</h2>
+      </div>
+      <div class="feature-grid three">
+        <article>
+          <h3>Make the idea inspectable</h3>
+          <p>Supporters can see the core story, seed-doc lineage, public boundaries and the kinds of help that would move it from vision into convening work.</p>
+        </article>
+        <article>
+          <h3>Invite the right first people</h3>
+          <p>The site speaks to community hosts, civic technologists, researchers, carers, venue allies, funders, sky-literacy people and media builders without over-selling to everyone.</p>
+        </article>
+        <article>
+          <h3>Keep trust ahead of scale</h3>
+          <p>Public pages carry the invitation. Private notes, cultural permissions, health claims, partner details and sensitive records stay off the public surface.</p>
+        </article>
+      </div>
+    </section>
 
-<section class="section">
-  <h2>👥 Who Attends</h2>
-  <div class="grid">
-    <div class="card">AI Researchers</div>
-    <div class="card">Space Agencies</div>
-    <div class="card">Government Leaders</div>
-    <div class="card">Founders & Builders</div>
-    <div class="card">Investors</div>
-    <div class="card">Artists & Creators</div>
-  </div>
-</section>
+    <nav class="trail-nav" aria-label="Previous and next pages">
+      <a class="button button-secondary" href="related.html">Previous: Related</a>
+      <a class="button button-primary" href="vision.html">Next: Vision</a>
+    </nav>
+  </main>
 
-<section class="section">
-  <h2>📍 Brisbane 2026</h2>
-  <p>
-    Hosted in one of the world’s fastest-growing global cities — the gateway to a new era of planetary collaboration.
-  </p>
-</section>
-
-<section class="section" style="text-align:center;">
-  <h2>✨ Join the Vanguard</h2>
-  <p>Be part of the 10,000 shaping humanity’s next chapter.</p>
-  <br>
-  <button>Apply Now</button>
-</section>
-
-<div class="footer">
-  <p>© 2026 GAJRA Earth • Joyful Responsible Abundance</p>
-</div>
-
-<script>
-function toggleTheme() {
-  const current = document.body.getAttribute("data-theme");
-  document.body.setAttribute(
-    "data-theme",
-    current === "dark" ? "light" : "dark"
-  );
-}
-</script>
-
+  <footer class="site-footer">
+    <p>This is a public-facing early support page for a proposed Brisbane gathering. It is not an official event announcement, ticket offer or partner claim.</p>
+    <nav aria-label="Footer links">
+      <a href="support.html">Signal support</a>
+      <a href="related.html">Related projects</a>
+      <a href="#top">Back to top</a>
+    </nav>
+  </footer>
+  <button class="back-to-top" type="button" aria-label="Back to top">Top</button>
+  <script src="script.js"></script>
 </body>
 </html>
