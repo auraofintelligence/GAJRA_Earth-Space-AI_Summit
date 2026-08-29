@@ -14,7 +14,7 @@ Each link below reflects an evidenced family, lineage or direct connection. This
 
 ### Aura Systems Image Atlas source projects
 
-- [aura-systems-image-atlas](https://github.com/auraofintelligence/aura-systems-image-atlas) - [public page](https://auraofintelligence.github.io/aura-systems-image-atlas/) - source project represented in this visual atlas, source project represented in visual atlas.
+- [aura-systems-image-atlas](https://github.com/auraofintelligence/aura-systems-image-atlas) - [public page](https://auraofintelligence.github.io/aura-systems-image-atlas/) - source project represented in this visual atlas.
 - [gajra-earth-public-hub](https://github.com/auraofintelligence/gajra-earth-public-hub) - [public page](https://auraofintelligence.github.io/gajra-earth-public-hub/) - explicit cross-reference, shared named build family.
 - [mineral-moonshots](https://github.com/auraofintelligence/mineral-moonshots) - [public page](https://auraofintelligence.github.io/mineral-moonshots/) - explicit cross-reference, shared research architecture.
 - [p4a_xyz](https://github.com/auraofintelligence/p4a_xyz) - [public page](https://auraofintelligence.github.io/p4a_xyz/) - explicit cross-reference, shared research architecture.
